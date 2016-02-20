@@ -61,20 +61,20 @@ function displayFooter()
 {
 	var footers = $(".page_footer");
 	var clockHTML = "<h1>" + showDateTime() + "</h1>";
-	var xhtmlHTML = "<a href=\"http://validator.w3.org/check?uri=referer\"><img src=\"http://www.w3.org/Icons/valid-xhtml11.png\" alt=\"Valid XHTML 1.1!\" /></a>";
-	var cssHTML = "<a href=\"https://jigsaw.w3.org/css-validator/check?uri=referer\"><img src=\"http://www.w3.org/Icons/valid-css2.png\" alt=\"Valid CSS 2!\" /></a>";
+	var xhtmlHTML = "<a href=\"http://validator.w3.org/check?uri=referer\" rel=\"external\"><img src=\"http://www.w3.org/Icons/valid-xhtml11.png\" alt=\"Valid XHTML 1.1!\" /></a>";
+	var cssHTML = "<a href=\"https://jigsaw.w3.org/css-validator/check?uri=referer\" rel=\"external\"><img src=\"http://www.w3.org/Icons/valid-css.png\" alt=\"Valid CSS 3!\" /></a>";
 	var validatorHTML = xhtmlHTML + cssHTML;
 	
 	for (var i = 0; i < footers.length; i++)
 	{
-		footers[i].innerHTML = "<p class=\"centered\">" + clockHTML + validatorHTML + "</p>";
+		footers[i].innerHTML = clockHTML + "<p class=\"centered\">" + validatorHTML + "</p>";
 	}
 }
 
 function displayHeader()
 {
 	var headers = $(".page_header");
-	var logoHTML = "<img class=\"logo\" src=\"http://www.unf.edu/~n00868808/img/logo.png\" alt=\"Website Logo Banner\" />";
+	var logoHTML = "<img class=\"logo\" src=\"./img/logo.png\" alt=\"Website Logo Banner\" />";
 	
 	for (var i = 0; i < headers.length; i++)
 	{
