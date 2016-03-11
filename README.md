@@ -6,3 +6,4 @@
 
 *******************************************************************
 
+This project contains the code for my personal UNF student home page.
