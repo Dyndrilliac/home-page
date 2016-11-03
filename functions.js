@@ -41,7 +41,7 @@ function autoSetPageSize()
     }
 
     $("body").width((intWidth - 30) + "px");
-    $("body").height((intHeight - 40) + "px");
+    $("body").height((intHeight - 30) + "px");
 }
 
 function breakFrames()
