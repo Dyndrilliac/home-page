@@ -63,11 +63,14 @@ function displayFooter()
 	var clockHTML = "<h1>" + showDateTime() + "</h1>";
 	var xhtmlHTML = "<a href=\"https://validator.w3.org/check?uri=referer\" rel=\"external\"><img src=\"https://www.w3.org/Icons/valid-xhtml11.png\" alt=\"Valid XHTML 1.1!\" /></a>";
 	var cssHTML = "<a href=\"https://jigsaw.w3.org/css-validator/check?uri=referer\" rel=\"external\"><img src=\"https://www.w3.org/Icons/valid-css.png\" alt=\"Valid CSS 3!\" /></a>";
-	var validatorHTML = xhtmlHTML + cssHTML;
+	var validatorHTML = "<p class=\"centered\">" + xhtmlHTML + cssHTML + "</p>";
+        var licenseLinkHTML = "<a href=\"./LICENSE.md\" rel=\"external\">MIT License</a>";
+        var companyLinkHTML = "<a href=\"https://www.mythicdigitalizations.com\" rel=\"external\">Mythic Digitalizations</a>";
+        var copyrightHTML = "<p class=\"centered\">Copyright&copy; 2014 Matthew Boyette. The source code for this site is released under the " + licenseLinkHTML + ". Hosted by " + companyLinkHTML + "</p>";
 	
 	for (var i = 0; i < footers.length; i++)
 	{
-		footers[i].innerHTML = clockHTML + "<p class=\"centered\">" + validatorHTML + "</p>";
+		footers[i].innerHTML = clockHTML + validatorHTML + copyrightHTML;
 	}
 }
 
