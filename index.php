@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<script type="text/javascript" src="./functions.js"></script>
 </head>
-<body onload="displaySubPage('main.html')">
+<body onload="displaySubPage('main.php')">
 	<div class="page_header"></div>
 	<div class="page_menu">
 		<ul class="menuhead">Internal Links
