@@ -28,7 +28,6 @@
         <ul class="menuhead"><?php echo($linkExternalText); ?>
             <li class="menuitem"><a href="https://www.facebook.com/dyndrilliac" rel="external">Facebook</a></li>
             <li class="menuitem"><a href="https://github.com/Dyndrilliac" rel="external">GitHub</a></li>
-            <li class="menuitem"><a href="https://www.mythicdigitalizations.com" rel="external">Mythic Digitalizations</a></li>
             <li class="menuitem"><a href="https://db.tt/0y1jFChK" rel="external">Resume</a></li>
             <li class="menuitem"><a href="https://twitter.com/Dyndrilliac" rel="external">Twitter</a></li>
         </ul>
