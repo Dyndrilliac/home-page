@@ -67,7 +67,7 @@ function displayFooter()
     var clockHTML = "</br>" + showDateTime();
     var xhtmlHTML = "<a href=\"https://validator.w3.org/check?uri=referer\" rel=\"external\"><img src=\"https://www.w3.org/Icons/valid-xhtml11.png\" alt=\"Valid XHTML 1.1!\" /></a>";
     var cssHTML = "<a href=\"https://jigsaw.w3.org/css-validator/check?uri=referer\" rel=\"external\"><img src=\"https://www.w3.org/Icons/valid-css.png\" alt=\"Valid CSS 3!\" /></a>";
-    var validatorHTML = "</br></br>" + xhtmlHTML + cssHTML;
+    var validatorHTML = "<p>" + xhtmlHTML + cssHTML + "</p>";
 
     for (var i = 0; i < footers.length; i++)
     {
